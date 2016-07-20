@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#dbdde2"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context ="com.sri.android.popularmovies.DetailFragment"
+    >
+    <ImageView
+        android:layout_width="@dimen/bkgposter_width"
+        android:layout_height="@dimen/bkgposter_width"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:layout_centerHorizontal="true"
+
+        android:id="@+id/bkgposter" />
+
+    <ImageView
+        android:layout_width="@dimen/detailposter_width"
+        android:layout_height="@dimen/detailposter_height"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:layout_marginTop="10dp"
+
+        android:id="@+id/poster"
+        android:layout_below="@+id/bkgposter"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:id="@+id/orgtitle"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="12dp"
+        android:layout_toRightOf="@+id/poster"
+        android:layout_below="@+id/bkgposter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Original Language"
+        android:id="@+id/lang"
+
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="12dp"
+        android:layout_toRightOf="@+id/poster"
+        android:layout_below="@+id/orgtitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Release Date"
+        android:id="@+id/Reldate"
+        android:layout_toRightOf="@+id/poster"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="12dp"
+        android:layout_below="@+id/lang" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popularity"
+        android:id="@+id/popu"
+        android:layout_toRightOf="@+id/poster"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="12dp"
+        android:layout_below="@+id/Reldate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/overview"
+
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="12dp"
+        android:layout_below="@+id/poster"
+        android:text="Synopsis" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vote Avg"
+        android:id="@+id/avgVote"
+        android:layout_centerHorizontal="false"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="12dp"
+        android:layout_below="@+id/popu"
+        android:layout_toRightOf="@+id/poster"/>
+
+    </RelativeLayout>
+
+</ScrollView>
+
